@@ -1,0 +1,49 @@
+@import url('https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css');
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+@theme {
+  --font-sans: 'Vazirmatn', system-ui, sans-serif;
+}
+@layer base {
+  body {
+    direction: inherit;
+  }
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  [dir="ltr"] {
+    direction: ltr;
+  }
+}
+
+/* Slim, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 9999px;
+}
+.dark *::-webkit-scrollbar-thumb {
+  background-color: rgb(71 85 105);
+}
+
+::selection {
+  background-color: rgb(191 219 254);
+}
+.dark ::selection {
+  background-color: rgba(37, 99, 235, 0.4);
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.35s ease-out both;
+}

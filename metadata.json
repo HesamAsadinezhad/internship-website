@@ -1,0 +1,8 @@
+{
+  "name": "سامانه مدیریت نگهداری و تعمیرات",
+  "description": "سامانه جامع مدیریت نگهداری و تعمیرات، پایش وضعیت و تحلیل ارتعاشات تجهیزات و ماشین‌آلات",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
